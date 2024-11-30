@@ -1,0 +1,32 @@
+{
+  "name": "Mon Bot WhatsApp",
+  "description": "Un bot WhatsApp puissant basé sur Node.js.",
+  "repository": "https://github.com/utilisateur/nom-du-depot",
+  "keywords": ["node", "whatsapp", "bot"],
+  "addons": ["heroku-postgresql"],
+  "env": {
+    "PORT": {
+      "description": "Port sur lequel le bot fonctionne (si nécessaire).",
+      "value": "3000"
+    },
+    "API_KEY": {
+      "description": "Clé API pour le bot.",
+      "required": true
+    },
+    "WHATSAPP_SESSION": {
+      "description": "Données de session pour la connexion WhatsApp.",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

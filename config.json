@@ -1,0 +1,20 @@
+{
+  "botName": "Devilus",
+  "ownerNumber": "+2250100113543",
+  "prefix": "!",
+  "sessionFile": "session.json",
+  "apiKeys": {
+    "openai": "VOTRE_CLE_API_OPENAI",
+    "weather": "VOTRE_CLE_API_METEO"
+  },
+  "settings": {
+    "language": "fr",
+    "autoReply": true,
+    "logging": true
+  },
+  "database": {
+    "type": "sqlite",
+    "file": "database.sqlite"
+  },
+  "port": 3000
+}

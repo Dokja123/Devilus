@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Un bot WhatsApp simple et puissant basé sur Node.js et Baileys.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Diwate",
+  "license": "MIT",
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.7.0",
+    "@hapi/boom": "^11.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
