@@ -1,0 +1,13 @@
+if (command === "image") {
+  const prompt = text.split(" ").slice(1).join(" "); // Récupère le texte après la commande
+  if (!prompt) {
+    await sock.sendMessage(sender, { text: "Veuillez fournir une description pour générer l'image. Exemple : !image chat mignon." });
+  } else {
+    const imageUrl = await generateImage(prompt);
+    if (imageUrl) {
+      await sock.sendMessage(sender, { image: { url: imageUrl }, caption: `Voici votre image pour : "${prompt}"` });
+    } else {
+      await sock.sendMessage(sender, { text: "Erreur lors de la génération de l'image. Essayez à nouveau." });
+    }
+  }
+}
